@@ -1,6 +1,9 @@
 ## Bare bone Micro-frontend
 This is a simple micro frontend application consisting of three separate apps
 
+https://user-images.githubusercontent.com/5136093/209764042-7348555e-f418-4399-a808-57e873ac077a.mov
+
+
 #### Product App: 
 This app displays fake product data using the `faker.js` library and can be accessed at `localhost: 8081`.
 
