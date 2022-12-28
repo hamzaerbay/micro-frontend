@@ -6,6 +6,6 @@ for (let i = 0; i < 5; i++) {
   const name = faker.commerce.productName();
   products += `<div>${name}</div>`;
 }
-console.log(products);
+products += '<strong>Generated with "faker": "^5.1.0" </strong>';
 
 document.querySelector("#dev-products").innerHTML = products;
