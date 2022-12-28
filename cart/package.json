@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "faker": "^5.0.0",
+    "faker": "^4.1.0",
     "html-webpack-plugin": "5.5.0",
     "nodemon": "^2.0.15",
     "webpack": "5.68.0",
