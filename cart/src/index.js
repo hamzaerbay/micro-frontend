@@ -1,3 +1,5 @@
-import faker from "faker";
-const cartText = `<div>${faker.random.number()} items in your cart</div>`
-document.querySelector('#dev-cart').innerHTML = cartText
+/* https://webpack.js.org/api/module-methods/#import-1
+  import(), Dynamically load modules that solve the load asynchronous js
+  package error caused by faker.js (shared by module federation). 
+  */
+  import("./bootstrap");
