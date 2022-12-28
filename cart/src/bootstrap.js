@@ -7,9 +7,15 @@ const mount = (el) => {
 };
 
 if (process.env.NODE_ENV === "development") {
-  const cardDom = document.querySelector("#isolated-dev-cart");
-  if (cardDom) {
-    mount(cardDom);
+    /* 
+    https://webpack.js.org/configuration/mode/#mode-development
+    webpack.config =>   mode: "development",
+    Purpose of #isolated-dev-cart is only used by the product app itself,
+     not in the outer apps (Container)
+  */
+  const cartDom = document.querySelector("#isolated-dev-cart");
+  if (cartDom) {
+    mount(cartDom);
   }
 }
 

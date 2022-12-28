@@ -12,28 +12,16 @@ const mount = (el) => {
   el.innerHTML = products;
 };
 
-/*
-  Context #1
-  We're running this file in development in isolation
-  We're using local index.html file
-  Which definetly has an element with an id of "dev-product"
-  we want to immediately render our app into that element
-*/
 if (process.env.NODE_ENV === "development") {
   /* 
+    https://webpack.js.org/configuration/mode/#mode-development
     webpack.config =>   mode: "development",
-    Purpose of #isolated-dev-products is only used by the product app itself, not in the outer apps
+    Purpose of #isolated-dev-products is only used by the product app itself, not in the outer apps (Container)
   */
-  const el = document.querySelector("#isolated-dev-products");
-  if (el) {
-    mount(el);
+  const productDOM = document.querySelector("#isolated-dev-products");
+  if (productDOM) {
+    mount(productDOM);
   }
 }
 
-/*
-   Context #2
-   We're running this file in dev or prod through the container app
-   No guarantee that an element with an id of "dev-product"
-   we dont want to try immediately render app
-*/
 export { mount };
