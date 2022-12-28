@@ -3,4 +3,4 @@
   import(), Dynamically load modules that solve the load asynchronous js
   package error caused by faker.js (shared by module federation). 
   */
-  import("./bootstrap");
+import("./bootstrap");
