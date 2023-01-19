@@ -18,3 +18,9 @@ This app loads and displays the product and cart apps, and can be accessed at `l
 - Product and cart apps make use of the shared `faker.js` library.
 
 Run `yarn start` in each directory and visit `http://localhost:8080`
+
+### Roadmap
+ - [X] Bare bone structure
+ - [ ] Multi framework use case (Vue, swelte, react, etc.)
+ - [ ] Deploy on Cloud (AWS, Vercel, Netlify)
+ - [ ] CI/CD pipeline (Github Actions)
