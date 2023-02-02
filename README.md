@@ -1,5 +1,5 @@
 ## Bare bone Micro-frontend (No CSS, No JS framework)
-This is a simple micro frontend application consisting of three separate apps
+This is a simple micro frontend application built with webpack module federation consisting of three separate apps.
 
 https://user-images.githubusercontent.com/5136093/209764042-7348555e-f418-4399-a808-57e873ac077a.mov
 
